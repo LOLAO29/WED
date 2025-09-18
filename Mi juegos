@@ -1,0 +1,72 @@
+mi-pagina-juegos/
+│
+└── index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página de Juegos</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #333;
+      padding: 15px;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      margin: 20px 0;
+    }
+    button {
+      background: #555;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #777;
+    }
+    iframe {
+      border: 3px solid #444;
+      border-radius: 10px;
+      width: 600px;
+      height: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Mi Página de Juegos 🎮</h1>
+  </header>
+
+  <nav>
+    <button onclick="cargarJuego('https://playsnake.org/')">Snake</button>
+    <button onclick="cargarJuego('https://tetris.com/play-tetris')">Tetris</button>
+    <button onclick="cargarJuego('https://pacman.live/')">Pac-Man</button>
+    <button onclick="cargarJuego('https://flappybird.io/')">Flappy Bird</button>
+    <button onclick="cargarJuego('https://play2048.co/')">2048</button>
+    <button onclick="cargarJuego('https://supermarioemulator.com/mario.php')">Mario</button>
+  </nav>
+
+  <iframe id="gameFrame" src=""></iframe>
+
+  <script>
+    function cargarJuego(url) {
+      document.getElementById('gameFrame').src = url;
+    }
+  </script>
+</body>
+</html>
