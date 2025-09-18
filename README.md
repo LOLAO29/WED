@@ -1,4 +1,6 @@
 # WED
+mi-pagina-juegos/  ← raíz del repo
+   └── index.html  ← archivo principal
 <!DOCTYPE html>
 <html lang="es">
 <head>
